@@ -79,7 +79,7 @@ body {
 
 .circle-inner a.yes { margin-left: -86px; }
 
-.spin-one    { background-image: url(../img/Spring.png);  }
+.spin-one    { background-image: url(../img/spring.png);  }
 .spin-two    { background-image: url(../img/java.png);  }
 .spin-three  { background-image: url(../img/hibernate.png);  }
 .spin-four   { background-image: url(../img/django.png);  }
