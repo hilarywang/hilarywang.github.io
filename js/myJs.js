@@ -1,28 +1,4 @@
-var circleArray = document.getElementsByClassName("circle"),
-    interfaceLock = false,
-    angle = 0;
-    
-    //chargearray();
 
-function chargearray () {
-    //alert(currentContentNum)
-    for (var i = 0, j = circleArray.length; i < j; i++) {
-        var circle = circleArray[i];
-        var circleAngle = parseInt (circle.dataset.angle);
-        var totalAngle = angle + circleAngle
-        var style = "rotate(" + totalAngle + "deg) translate(245px)";
-        totalAngle = - totalAngle;
-        style = style + " rotate(" + totalAngle + "deg)"
-        circle.style.webkitTransform = style;
-        circle.style.Transform = style;
-    }
-}
-
-window.setInterval(function(){
-   
-        angle+=30;
-        chargearray();
-}, 2000);
 
 $(function() {
       
@@ -43,11 +19,26 @@ function rotate(r){
       }
       console.log("dddd");
  });
-
-$(document).ready(function() {
+$(document).ready(function(){
+    function fade() {    
+        $('.circle').each(function(i){
+            var time = 500 * (i + 1);
+            setInterval(function(){
+                $('.circle').eq(i).addClass('open').animate({opacity: '1'}, i);
+            }, time);
+        });
+        
+        $('.circle').each(function(i){
+            var time = 6000+500 * (i + 1);
+            setInterval(function(){
+                $('.circle').eq(i).removeClass('open').animate({opacity: '0'}, i);
+            }, time);
+        });
+    }
+    fade();
     var f = document.getElementById('divider1');
     setInterval(function() {
         f.style.display = (f.style.display == 'none' ? '' : 'none');
-    }, 1000); 
-    
+    }, 3000); 
 });
+
