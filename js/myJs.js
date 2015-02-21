@@ -20,18 +20,31 @@ function rotate(r){
       console.log("dddd");
  });
 $(document).ready(function(){
-    function fade() {    
-        $('.circle').each(function(i){
-            var time = 500 * (i + 1);
-            setInterval(function(){
+    $('.circle').each(function(i){
+            console.log("in"+i);
+            var time = 500*(i+1);
+            setTimeout(function(){
                 $('.circle').eq(i).addClass('open').animate({opacity: '1'}, i);
             }, time);
         });
+       
+    function fade() {    
         
         $('.circle').each(function(i){
-            var time = 6000+500 * (i + 1);
+            console.log("out"+i);
+            var time = 7000+500*(i+1);
             setInterval(function(){
                 $('.circle').eq(i).removeClass('open').animate({opacity: '0'}, i);
+            }, time);
+        });
+         $('.circle').each(function(i){
+            console.log("in"+i);
+            if (i<=3) {
+                var time=4000+500*(i+4);
+            }else{
+            var time = 5500+500*(i+1);}
+            setInterval(function(){
+                $('.circle').eq(i).addClass('open').animate({opacity: '1'}, i);
             }, time);
         });
     }
