@@ -27,7 +27,7 @@ $(document).ready(function(){
                 $('.circle').eq(i).addClass('open').animate({opacity: '1'}, i);
             }, time);
         });
-       
+     
     function fade() {    
         
         $('.circle').each(function(i){

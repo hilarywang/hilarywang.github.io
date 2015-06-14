@@ -2,7 +2,7 @@
     <html class="no-js" leng="en">
         <head>
             <meta charset="utf-8">
-            <title>Hilary Wang Front End Design</title>
+            <title>Min Wang Front End Design</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="">
             <meta name="author" content="">      
@@ -12,7 +12,8 @@
             <link rel="stylesheet" href="css/base.css">
           
             <script src="js/jquery-1.11.2.js"></script>
-            <script src="js/myJs.js"></script>          
+            <script src="js/myJs.js"></script>
+            <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         </head>
         
         <body>
@@ -25,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Hilary Wang</a>
+                    <a class="navbar-brand" href="/">Min Wang</a>
                     <div class="collapse navbar-collapse" id="navbar-exl-collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
@@ -57,7 +58,7 @@
                         </div>
                         <div class="circle_holder second">
                             <div class="circle pie">
-                                <a href="#"><span>Django, RestAPI</span></a>
+                                <a href="#"><span>Django, ZKoss</span></a>
                             </div>
                         </div>
                         <div class="circle_holder third">        
@@ -83,7 +84,7 @@
                         </div>
                         <div class="circle_holder seventh">
                             <div class="circle pie">
-                                <a href="#"><span>MySql, MongoDB</span></a>
+                                <a href="#"><span>MySql</span></a>
                             </div>
                         </div>
         
@@ -100,15 +101,41 @@
                 </div><!-- end col 12 -->
                
             </div><!-- end row -->
-            <div class = "container-fluid" id="divider1">
+       <!--     <div class = "container-fluid" id="divider1">
                 <div class="clo-md-12">
-                    <br>
-                        <br>
+                    <marquee>This text will scroll from right to left</marquee>
+
+<marquee direction="up">This text will scroll from bottom to top</marquee>
+
+<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+  <marquee behavior="alternate">
+    This text will bounce
+  </marquee>
+</marquee>
+
                 </div>
-            </div>
+            </div>-->
             <!-- my work -->
             <div class = "container-fluid" id="myWork">
                 <h1>Portfolio</h1>
+                 <!-- second -->
+                  <div class="col-md-12">
+                    <div class="col-md-4">
+                       <h2>Searchforce Monitor Platform</h2>
+                        <p>Java/ZKoss/Spring/Hibernate/Maven</p>
+                        <p>HTML5/CSS/Bootstrap/LESS</p>
+                    </div> <!-- end col 4-->
+                    <div class="col-md-8">
+                        <div class="col-md-6">
+                           <img src="img/monitor.png" class="img-thumbnail">
+                       </div> <!-- end col 4-->
+                        <div class="col-md-6">
+                           <img src="img/monitor2.png" class="img-thumbnail">
+                       </div> <!-- end col 4-->
+                        
+                    </div><!--end col 8 -->
+                </div>  <!-- end col 12 -->
+                <!-- second row -->
                 <!-- first -->
                  <div class="col-md-12">
                     <div class="col-md-4">
@@ -135,36 +162,17 @@
                         </div> 
                     </div><!-- end col 8 -->
                 </div>  <!-- end col 12 -->    
-                <!-- second -->
-                  <div class="col-md-12">
-                    <div class="col-md-4">
-                       <h2>Media Monitor Website</h2>
-                        <p>Java/Spring/Hibernate/Maven/Solr</p>
-                        <p>HTML5/CSS/Bootstrap/Backbone.js/AJAX</p>
-                    </div> <!-- end col 4-->
-                    <div class="col-md-8">
-                        <div class="col-md-4">
-                           <img src="img/glogou2.png" class="img-thumbnail">
-                       </div> <!-- end col 4-->
-                        <div class="col-md-4">
-                           <img src="img/glogou3.png" class="img-thumbnail">
-                       </div> <!-- end col 4-->
-                        <div class="col-md-4">
-                           <img src="img/glogou1.png" class="img-thumbnail">
-                       </div> <!-- end col 4-->
-                    </div><!--end col 8 -->
-                </div>  <!-- end col 12 -->
-                <!-- second row -->
+               
                
             </div><!--end my work -->
-      
+    
             <!-- myskill -->
              <div class="container-fluid" id="mySkill">
                 <div class="row">
                     <div class="col-md-3">
                         
                         <ul>
-                        <li class="logo"><img src="img/spring.png" class="img-thumbnail-logo"></li>
+                        <li class="logo"><img src="img/zk.png" class="img-thumbnail-logo"></li>
                         <li class="logo"><img src="img/java.png" class="img-thumbnail-logo"></li>
                         <li class="logo"><img src="img/javascript.png" class="img-thumbnail-logo"></li>
                         <li class="logo"><img src="img/jquery.png" class="img-thumbnail-logo"></li>
@@ -175,7 +183,7 @@
                    <div class="col-md-6" id="aboutMe">
                         
                         <h2>About Me</h2>
-                         <p class="regular">I'm Hilary Wang, a full stack web developer and designer. My passion is creating innovative web applications.</p>
+                         <p class="regular">I'm Min Wang, a web developer. My passion is creating innovative web applications.</p>
                          <h3 class="sub_header">Professional capabilities</h3>
                             <div class="content_block">
                             <ul class="items">
@@ -187,12 +195,12 @@
                             </ul>
                             <h3 class="sub_header">Technical skills</h3>
                             <ul class="items">
-                              <li>Java, Python, SQL, JavaScript, Node.js</li>
-                              <li>Spring, Hibernate, and Python/Django</li>
+                              <li>Java, Python, SQL, JavaScript</li>
+                              <li>ZKoss, Spring, Hibernate, and Python/Django</li>
                               <li>JavaScript, JQuery, AJAX, Backbone.js</li>
                               <li>CSS, HTML5, JSon,Bootstrap, XML, Web service (REST)</li>
-                              <li>MySQL, Mongodb, Maven</li>
-                              <li>Linux, Apache Tomcat, GIT, Heroku</li>
+                              <li>MySQL, Maven</li>
+                              <li>Linux, Jboss, GIT, Heroku</li>
                             </ul>
                             </div>
                     </div><!-- col-center -->
