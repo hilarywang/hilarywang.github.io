@@ -1,171 +1,56 @@
 html, body, .container .row, .col-md-3, .tabbable, .nav nav-tabs, .tab-content, .tab-pane {
 	height: 100%;}
-
-body {   
-    background-position:50% 0;
-    padding-top: 55px; 
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
+	
+body{
+	color: #ffffff;
+	font-family: Georgia, Georgia, serif;
+	font-size: 200%;
+	
+	font: 30px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}
+#container {
+  position: relative;
+  padding-top: 0px;
+}
+#header{
+	background: url(../img/fixed_topbar.png) repeat-x fixed;
+	height: 80px;
+	
 }
 
-
-#home{
-     background:url(../img/background.jpg);
-    background-size: 100%;
+#welcome{
+	width:100%;
+	height: 550px;
+	background: url(../img/welcome.jpg) no-repeat center;
+	background-size: 100%;
 }
-#mySkill{
-    background:url(../img/background1.jpg);
-    background-size: 100%;
+#welcome img{
+	margin-top: 150px;
 }
-.wrapper {
-margin: 70px auto;
-width: 549px;
+#work{
+	background-color: #A4A4A4;
+	
+	
 }
-
-.circles {
-
-font-size: 14px;
-height: 422px;
-position: relative;
-width: 407px;
+#work img{
+	margin-top: 15px;
+	height:300px;
+	width: 100%;
+	border: 6px solid grey;
 }
-
-.main_title {
-font-size: 24px;
-left: 89px;
-position: absolute;
-text-align: center;
-top: 162px;
-width: 225px;
+.modal-body img{
+	width:800px;
+	height: 800px;
 }
 
-.circle_holder {
-position: absolute;
+#about {
+	background-color: #E6E6E6;
+	
 }
-
-.circle {
-border-radius: 100%;
-font-family: 'Helvetica', Arial, sans-serif;
-font-size: 14px;
-height: 0px;
-left: 84px;
--ms-transition-duration: 2s;
--ms-transition-property: all;
--ms-transition-timing-function: ease-in-out;
--moz-transition-duration: 2s;
--moz-transition-property: all;
--moz-transition-timing-function: ease-in-out;
--webkit-transition-duration: 2s;
--webkit-transition-property: all;
--webkit-transition-timing-function: ease-in-out;
--o-transition-duration: 2s;
--o-transition-property: all;
--o-transition-timing-function: ease-in-out;
-transition-duration: 2s;
-transition-property: all;
-transition-timing-function: ease-in-out;
-text-align: center;
-overflow: hidden;
-position: absolute;
-top: 84px;
-width: 0px;
-zoom: 1;
-opacity: 0;
-}
-
-.circle.open {
-top: 0px;
-left: 0px;
-width: 168px;
-height: 168px;
-}
-
-.circle a {
-bottom: 0;
-color: #fff;
-left: 0;
-position: absolute;
-right: 0;
-text-decoration: none;
-text-transform: uppercase;
-top: 0;
-}
-
-.circle a span {
-left: 20%;
-position: absolute;
-text-shadow: 1px 1px 2px #000;
-top: 40%;
-width: 100px;
-}
-
-.first { left: 194px; top: -51px; z-index: 10; }
-.first .circle { background: rgba(211,79,50,0.8); -pie-background: rgba(211,79,50,0.8); }
-.first a span { top: 44%; }
-
-.second { left: 296px; top: 51px; }
-.second .circle { background: rgba(253, 217, 79, 0.8); -pie-background: rgba(253, 217, 79, 0.8); }
-
-.third { left: 298px; top: 199px; }
-.third .circle { background: rgba(108, 27, 54, 0.8); -pie-background: rgba(108, 27, 54, 0.8); }
-.third a span { left: -3%; width: 180px; }
-
-.fourth { left: 195px; top: 300px; }
-.fourth .circle { background: rgba(169, 204, 86, 0.8); -pie-background: rgba(169, 204, 86, 0.8); }
-.fourth a span { top: 32%; }
-
-.fifth { left: 48px; top: 302px; }
-.fifth .circle { background: rgba(217, 31, 48, 0.8); -pie-background: rgba(217, 31, 48, 0.8); }
-.fifth a span { left: 5%; top: 45%; width: 150px; }
-
-.sixth { left: -57px; top: 198px; }
-.sixth .circle { background: rgba(220, 140, 67, 0.8); -pie-background: rgba(220, 140, 67, 0.8); }
-.sixth a span { left: 19%; top: 44%; }
-
-.seventh { left: -56px; top: 52px; }
-.seventh .circle { background: rgba(61, 28, 63, 0.8); -pie-background: rgba(61, 28, 63, 0.8); }
-.seventh a span { left: 18%; top: 39%; }
-
-.eigth { left: 47px; top: -52px; }
-.eigth .circle { background: rgba(22, 76, 131, 0.8); -pie-background: rgba(22, 76, 131, 0.8); }
-.eigth a span { left: 8%; top: 36%; width: 135px; }
-.img-thumbnail {
-	margin: 0 20px 10px 0;
-        height: 250px;
-        width: 80%;
-}
-
-.but-infor{
-	left:145;
-	height:50%;
+#about p, li, h3{
+	color: #140718;
 }
 ul
 {
     list-style-type: none;
-}
-.logo{
-	height: 120px;
-	width: 80%;
-}
-.right img{
-	float: right;
-}
-.img-thumbnail-logo {
-	
-        height: 80px;
-        width: 80px;
-}
-h1{
-	text-align: center;
-}
-h2, h3{
-	color: blue;
-}
-.regular, .items li{
-	 font-size: 20px;
-}
-#divider1{
-	height: 25px;
-	background:url(../img/background3.jpg);
-	background-size: 100%;
 }

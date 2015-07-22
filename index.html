@@ -9,17 +9,18 @@
            
             <link rel="stylesheet" href="css/bootstrap.css">
             <link rel="stylesheet" href="css/bootstrap-responsive.css">
+            
             <link rel="stylesheet" href="css/base.css">
           
             <script src="js/jquery-1.11.2.js"></script>
+            <script src="js/bootstrap.min.js"></script>
             <script src="js/myJs.js"></script>
             <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         </head>
         
         <body>
-            
-
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="row text-center" id="header">
+             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <button class="navbar-toggle" data-target="#navbar-exl-collapse" data-toggle="collapse" type ="button">
                         <span class="icon-bar"></span>
@@ -30,14 +31,14 @@
                     <div class="collapse navbar-collapse" id="navbar-exl-collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="http://www.global-customer.com">Home</a>
+                                <a href="#welcome">Home</a>
                             </li>
                             <li>
-                                <a href="#myWork">My Work </a>
+                                <a href="#work">Work </a>
                                
                             </li>
                             <li>
-                                <a href="#mySkill" >My Skills</a>
+                                <a href="#about" >About</a>
                                 
                             </li><!-- end of dropdown -->
                         </ul><!-- end of nav -->
@@ -45,156 +46,68 @@
                     </div><!-- end of collapse navbar-collapse -->                   
                 </div><!-- end of inner container -->
             </nav>
-            
-            <!-- main home -->
-            <div class = "row" id="home">
+           </div>
+           <div class="row text-center" id="welcome">
                 <div class="col-md-12">
-                   <div class="wrapper">
-                    <div class="circles">
-                        <div class="circle_holder first">
-                            <div class="circle pie">
-                                <a href="#"><span>Java, Python</span></a>        
-                            </div>
-                        </div>
-                        <div class="circle_holder second">
-                            <div class="circle pie">
-                                <a href="#"><span>Django, ZKoss</span></a>
-                            </div>
-                        </div>
-                        <div class="circle_holder third">        
-                            <div class="circle pie">
-                                <a href="#"><span>Spring, Hibernate</span></a>
-                            </div>
-                        </div>
-                        <div class="circle_holder fourth">
-                            <div class="circle pie">
-                                <a href="#"><span>JavaSript, jQuery, CSS</span></a>
-                            </div>        
-                        </div>
-                        <div class="circle_holder fifth">
-                            <div class="circle pie">
-                                <a href="#"><span>Backbone.js, AJAX</span></a>
-                            </div>
-                        </div>
-                        <div class="circle_holder sixth">
-                            <div class="circle pie">
-        
-                                <a href="#"><span>Solr, Maven</span></a>
-                            </div>
-                        </div>
-                        <div class="circle_holder seventh">
-                            <div class="circle pie">
-                                <a href="#"><span>MySql</span></a>
-                            </div>
-                        </div>
-        
-                        <div class="circle_holder eigth">
-                            <div class="circle pie">
-                                <a href="#"><span>Linux</span></a>
-                            </div>
-                        </div>
-                    </div><!-- end circle -->
-                    
-                    </div><!-- end wrapper -->
-                    
-                    
-                </div><!-- end col 12 -->
-               
-            </div><!-- end row -->
-       <!--     <div class = "container-fluid" id="divider1">
-                <div class="clo-md-12">
-                    <marquee>This text will scroll from right to left</marquee>
-
-<marquee direction="up">This text will scroll from bottom to top</marquee>
-
-<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
-  <marquee behavior="alternate">
-    This text will bounce
-  </marquee>
-</marquee>
+                    <img src="img/min.png" class="img-circle"/>
+                    <p>Welcome to my portfolio, my name is <a href="#about">Min Wang</a>.<br/>
+							I am a full stack developer.<br/>
+								I absolutely love what I do and would like to <br/>
+									find a challenge position that I might be suited for!</p>
 
                 </div>
-            </div>-->
-            <!-- my work -->
-            <div class = "container-fluid" id="myWork">
-                <h1>Portfolio</h1>
-                 <!-- second -->
-                  <div class="col-md-12">
-                    <div class="col-md-4">
-                       <h2>Searchforce Monitor Platform</h2>
-                        <p>Java/ZKoss/Spring/Hibernate/Maven</p>
-                        <p>HTML5/CSS/Bootstrap/LESS</p>
-                        <p><a href="https://www.searchforce.net/monitor/">SearchForce Monitor</a></p>
-                    </div> <!-- end col 4-->
+           </div>  <!-- end welcome -->
+           
+           <div class="row text-center" id="work">
+                <p>My Work</p>
+                <div class="col-md-6 col-md-offset-3" id="photos">
                     <div class="col-md-8">
-                        <div class="col-md-6">
-                           <img src="img/monitor.png" class="img-thumbnail">
-                       </div> <!-- end col 4-->
-                        <div class="col-md-6">
-                           <img src="img/monitor2.png" class="img-thumbnail">
-                       </div> <!-- end col 4-->
-                        
-                    </div><!--end col 8 -->
-                </div>  <!-- end col 12 -->
-                <!-- second row -->
-                <!-- first -->
-                 <div class="col-md-12">
+                        <img src="img/global6.png" class="img-thumbnail">
+                    </div>
                     <div class="col-md-4">
-                        <h2>Shopping Guide Website</h2>
-                        <p>Django/HTML5/CSS/Bootstrap/Backbone.js</p>
-                        <p>AJAX/Solr/GoogleMapAPI/Facebook Plugin</p>
-                        <p><a href="http://global-customer.com/luxury/?">global-customer.com_cities</a></p>
-                        <p><a href="http://global-customer.com/luxury/sunnyvale/index.html">global-customer.com_brands</a></p>
-                        <a href="http://global-customer.com/luxury/sunnyvale/fashion_celine.html">global-customer.com_products</a></p>
-                    </div> <!-- end col 6-->
+                        <img src="img/global3.png" class="img-thumbnail">
+                    </div>
+                     <div class="col-md-4">
+                        <img src="img/global8.png" class="img-thumbnail">
+                    </div>
                     <div class="col-md-8">
-                     <div class="col-md-6">
-                            <img src="img/global6.png" class="img-thumbnail">
-                        </div> <!-- end col 6-->
-                   
-                        <div class="col-md-6">
-                            <img src="img/global7.png" class="img-thumbnail">
-                        </div> <!-- end col 6-->
-                         <div class="col-md-6">
-                            <img src="img/global8.png" class="img-thumbnail">
-                        </div> <!-- end col 6-->
-                        <div class="col-md-6">
-                            <img src="img/global5.png" class="img-thumbnail">
-                        </div> 
-                    </div><!-- end col 8 -->
-                </div>  <!-- end col 12 -->    
-               
-               
-            </div><!--end my work -->
-    
-            <!-- myskill -->
-             <div class="container-fluid" id="mySkill">
-                <div class="row">
-                    <div class="col-md-3">
-                        
-                        <ul>
-                        <li class="logo"><img src="img/zk.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/java.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/javascript.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/jquery.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/hibernate.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/django.png" class="img-thumbnail-logo"></li>
-                        </ul>
-                    </div><!-- end col 3 -->
-                   <div class="col-md-6" id="aboutMe">
-                        
-                        <h2>About Me</h2>
-                         <p class="regular">I'm Min Wang, a web developer. My passion is creating innovative web applications.</p>
-                         <h3 class="sub_header">Professional capabilities</h3>
-                            <div class="content_block">
-                            <ul class="items">
+                        <img src="img/global1.png" class="img-thumbnail">
+                    </div>
+                     <div class="col-md-4">
+                        <img src="img/monitor.png" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/glogou3.png" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/monitor2.png" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">         
+                        <div class="modal-body">                
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+           </div><!-- end work -->
+           
+           <div class="row text-center" id="about">
+                <div class="col-md-8 col-md-offset-2" style="margin-top: 40px;">
+                    <div class="col-md-12"><p class="regular">I'm Min Wang, a web developer. My passion is creating innovative web applications.</p></div>
+                    <div class="col-md-6">
+                        <h3 class="sub_header">Professional capabilities</h3>
+                        <ul class="items">
                               <li>High-quality front and back-end development for web sites.</li>                          <li>Modular, scalable, robust, and reusable code.</li>
                               <li>Performance optimisation, usability, and accessibility.</li>
                               <li>SEO using semantic HTML and Microformats.</li>
                               <li>Site planning and architecture.</li>
                               <li>User interface design.</li>
                             </ul>
-                            <h3 class="sub_header">Technical skills</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="sub_header">Technical skills</h3>
                             <ul class="items">
                               <li>Java, Python, SQL, JavaScript</li>
                               <li>ZKoss, Spring, Hibernate, and Python/Django</li>
@@ -203,24 +116,13 @@
                               <li>MySQL, Maven</li>
                               <li>Linux, Jboss, GIT, Heroku</li>
                             </ul>
-                            </div>
-                    </div><!-- col-center -->
-                    
-                    <div class="col-md-3">
-                        <ul class="right">
-                        <li class="logo"><img src="img/ajax.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/json.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/maven.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/css.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/backbone.png" class="img-thumbnail-logo"></li>
-                        <li class="logo"><img src="img/solr.png" class="img-thumbnail-logo"></li>
-                        </ul>
-                    </div><!-- end col 3 -->
+                    </div>
+                    <div class="col-md-12">
+                        <h3>I LIKE...</h3>
+                        <p>In addition to my obsession with everything web application developing related. I also like workout and fashion. I love weightlifting and I'm marathon runner. Fashion is a way to express myself</p>
+                    </div>
                 </div>
-            </div><!-- end sill -->
-        
-        
-        
+           </div><!-- end about -->
         
     </body>    
 </html>
