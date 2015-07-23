@@ -20,12 +20,16 @@ body{
 
 #welcome{
 	width:100%;
+	margin-left: 0px;
+	margin-right: 0px;
 	height: 550px;
 	background: url(../img/welcome.jpg) no-repeat center;
 	background-size: 100%;
 }
 #welcome img{
+	
 	margin-top: 150px;
+	margin-left: 0px;
 }
 #work{
 	background-color: #A4A4A4;
@@ -33,6 +37,7 @@ body{
 	
 }
 #work img{
+	
 	margin-top: 15px;
 	height:300px;
 	width: 100%;
@@ -47,10 +52,19 @@ body{
 	background-color: #E6E6E6;
 	
 }
-#about p, li, h3{
+#about p, h2{
 	color: #140718;
 }
 ul
 {
     list-style-type: none;
+}
+#about li{
+	font-size: 25px;
+	color: #140718;
+}
+.sub_header{
+	border: 15px #E6E6E6;
+	height: 500px;
+	background-color: #A9D0F5; 
 }
